@@ -43,6 +43,7 @@ app.MapPost("/Pessoa", async (Pessoa domain, MinimalApiContext dbContext) =>
 
 app.MapPut("/Pessoa/{id}", async (long id, Pessoa domain, MinimalApiContext dbContext) =>
 {
+    domain.Id = id;
     dbContext.Pessoas.Update(domain);
     await dbContext.SaveChangesAsync();
 });
