@@ -1,4 +1,4 @@
-# ASP.NET-Minimal-Api
+# .NET-Minimal-Api
 
 - Sobre:
 
